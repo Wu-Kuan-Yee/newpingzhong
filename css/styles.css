@@ -37,8 +37,8 @@ img{
     font-size: 3rem;
     text-align: center; /*让div内部文字居中*/
 	border-radius: 2rem;
-	width: 50rem;
-	height: 50rem;
+	width: 70rem;
+	height: 40rem;
 	margin: auto;
     padding: 2rem;
 	position: relative;
@@ -136,8 +136,10 @@ transition:all .5s;
 .box-link{
     width: 2rem;
     height: 2rem;
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(150, 150, 255, 1);
     border-radius: 0.2rem;
+    font-size: 2rem;
     transition:all .5s;
 }
 
