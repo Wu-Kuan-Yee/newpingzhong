@@ -51,6 +51,10 @@
     overflow: auto; /* 当内容超过最大高度时显示滚动条 */
 }
 
+.article p{
+    text-indent: 2em; /* 段首缩进两个字符 */
+}
+
 .article-abstract{
     background-color: rgba(255, 255, 255, 0.3);
     color: rgba(0, 0, 0, 1);
@@ -65,4 +69,8 @@
     bottom: auto;
     max-height: 30rem; /* 设置最大高度 */
     overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}
+
+.article-abstract p{
+    text-indent: 2em; /* 段首缩进两个字符 */
 }

@@ -38,7 +38,7 @@ img{
     text-align: center; /*让div内部文字居中*/
 	border-radius: 2rem;
 	width: 50rem;
-	height: 40rem;
+	height: 50rem;
 	margin: auto;
     padding: 2rem;
 	position: relative;
@@ -48,7 +48,7 @@ img{
 }
 
 .box-head:hover {
-  transform: scale(1.2); /*鼠标悬停在上面时放大的倍数(1.2倍)*/
+  transform: scale(1.05); /*鼠标悬停在上面时放大的倍数(1.2倍)*/
 }
 
 .box-article{
