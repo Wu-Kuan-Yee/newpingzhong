@@ -1,0 +1,68 @@
+.article-box{
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 1.5rem;
+    color: rgba(78, 220, 245, 1);
+	border-radius: 1rem;
+	width: 90rem;
+    padding: 2rem;
+	position: relative;
+    top: 3rem;
+    left: 50rem;
+    max-height: 30rem; /* 设置最大高度 */
+    overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}
+
+.article-button{
+    width: 15rem;
+    height: 5rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 1rem;
+    border-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: auto;
+    padding: auto;
+    position: relative;
+    font-family: 'Times New Roman', '楷体', sans-serif;
+    font-size: 1.5rem;
+    transition:all .5s;
+}
+
+.article-button:hover {
+    transform: scale(1.2);
+  }
+
+.article{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+	border-radius: 1rem;
+	width: 90rem;
+    padding: 2rem;
+	position: relative;
+	top: 3rem;
+	left: 50rem;
+	right: auto;
+    bottom: auto;
+    max-height: 30rem; /* 设置最大高度 */
+    overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}
+
+.article-abstract{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.6rem;
+	border-radius: 1rem;
+	width: 30rem;
+    padding: 2rem;
+	position: absolute;
+	top: 10rem;
+	left: 5rem;
+	right: auto;
+    bottom: auto;
+    max-height: 30rem; /* 设置最大高度 */
+    overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}

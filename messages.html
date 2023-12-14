@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>留言</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/messages.css">
+        <link rel="stylesheet" href="css/overflow.css">
+    </head>
+
+    <body background="images/background.jpg">
+        <div  style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
+
+            <!--文章介绍框-->
+            <!--<div class="box-messages">
+                <h1>留言</h1>
+                <p style="font-size: 1.5rem; color: rgba(78, 220, 245, 1);">您可于此处向我留言。</p>
+            </div>-->
+    
+            <!--顶部按钮-->
+            <div class="button-container">
+                <button class="box-button" onclick="window.location.href ='index.html'">首页</button>
+                <button class="box-button" onclick="window.location.href ='article.html'">文章</button>
+                <button class="box-button" onclick="window.location.href ='amusement.html'">娱乐</button>
+                <button class="box-button" onclick="window.location.href ='sundries.html'">杂项</button>
+                <button class="box-button" onclick="window.location.href ='messages.html'">留言</button>
+            </div>
+
+        </div>
+
+    <!--留言板-->
+	<div id="message-board">
+        <div id="message-input">
+          <textarea id="message" class="limited-height" placeholder="欢迎留言！可以选择匿名或非匿名发布~" rows="4" style="resize: none;"></textarea>
+          <button id="emojiButton" onclick="toggleEmojiList()">😊</button>
+  
+          <div id="emojiList" class="limited-height" style="font-size:48px">
+              <span class="emoji" onclick="insertEmoji('&#128512')">&#128512</span>
+              <span class="emoji" onclick="insertEmoji('&#128513')">&#128513</span>
+              <span class="emoji" onclick="insertEmoji('&#128514')">&#128514</span>
+              <span class="emoji" onclick="insertEmoji('&#128515')">&#128515</span>
+              <span class="emoji" onclick="insertEmoji('&#128516')">&#128516</span>
+              <span class="emoji" onclick="insertEmoji('&#128517')">&#128517</span>
+              <span class="emoji" onclick="insertEmoji('&#128518')">&#128518</span>
+              <span class="emoji" onclick="insertEmoji('&#128519')">&#128519</span>
+              <span class="emoji" onclick="insertEmoji('&#128520')">&#128520</span>
+              <span class="emoji" onclick="insertEmoji('&#128521')">&#128521</span>
+              <span class="emoji" onclick="insertEmoji('&#128522')">&#128522</span>
+              <span class="emoji" onclick="insertEmoji('&#128523')">&#128523</span>
+              <span class="emoji" onclick="insertEmoji('&#128524')">&#128524</span>
+              <span class="emoji" onclick="insertEmoji('&#128525')">&#128525</span>
+              <span class="emoji" onclick="insertEmoji('&#128526')">&#128526</span>
+              <span class="emoji" onclick="insertEmoji('&#128527')">&#128527</span>
+              <span class="emoji" onclick="insertEmoji('&#128528')">&#128528</span>
+              <span class="emoji" onclick="insertEmoji('&#128529')">&#128529</span>
+              <span class="emoji" onclick="insertEmoji('&#128530')">&#128530</span>
+              <span class="emoji" onclick="insertEmoji('&#128531')">&#128531</span>
+              <span class="emoji" onclick="insertEmoji('&#128532')">&#128532</span>
+              <span class="emoji" onclick="insertEmoji('&#128533')">&#128533</span>
+              <span class="emoji" onclick="insertEmoji('&#128534')">&#128534</span>
+              <span class="emoji" onclick="insertEmoji('&#128535')">&#128535</span>
+              <span class="emoji" onclick="insertEmoji('&#128536')">&#128536</span>
+              <span class="emoji" onclick="insertEmoji('&#128537')">&#128537</span>
+              <span class="emoji" onclick="insertEmoji('&#128538')">&#128538</span>
+              <span class="emoji" onclick="insertEmoji('&#128539')">&#128539</span>
+              <span class="emoji" onclick="insertEmoji('&#128540')">&#128540</span>
+              <span class="emoji" onclick="insertEmoji('&#128541')">&#128541</span>
+              <span class="emoji" onclick="insertEmoji('&#128542')">&#128542</span>
+              <span class="emoji" onclick="insertEmoji('&#128543')">&#128543</span>
+              <span class="emoji" onclick="insertEmoji('&#128544')">&#128544</span>
+              <span class="emoji" onclick="insertEmoji('&#128545')">&#128545</span>
+              <span class="emoji" onclick="insertEmoji('&#128546')">&#128546</span>
+              <span class="emoji" onclick="insertEmoji('&#128547')">&#128547</span>
+              <span class="emoji" onclick="insertEmoji('&#128548')">&#128548</span>
+              <span class="emoji" onclick="insertEmoji('&#128549')">&#128549</span>
+              <span class="emoji" onclick="insertEmoji('&#128550')">&#128550</span>
+              <span class="emoji" onclick="insertEmoji('&#128551')">&#128551</span>
+              <span class="emoji" onclick="insertEmoji('&#128552')">&#128552</span>
+              <span class="emoji" onclick="insertEmoji('&#128553')">&#128553</span>
+              <span class="emoji" onclick="insertEmoji('&#128554')">&#128554</span>
+              <span class="emoji" onclick="insertEmoji('&#128555')">&#128555</span>
+              <span class="emoji" onclick="insertEmoji('&#128556')">&#128556</span>
+              <span class="emoji" onclick="insertEmoji('&#128557')">&#128557</span>
+              <span class="emoji" onclick="insertEmoji('&#128558')">&#128558</span>
+              <span class="emoji" onclick="insertEmoji('&#128559')">&#128559</span>
+              <span class="emoji" onclick="insertEmoji('&#128560')">&#128560</span>
+              <span class="emoji" onclick="insertEmoji('&#128561')">&#128561</span>
+              <span class="emoji" onclick="insertEmoji('&#128562')">&#128562</span>
+              <span class="emoji" onclick="insertEmoji('&#128563')">&#128563</span>
+              <span class="emoji" onclick="insertEmoji('&#128564')">&#128564</span>
+              <span class="emoji" onclick="insertEmoji('&#128565')">&#128565</span>
+              <span class="emoji" onclick="insertEmoji('&#128566')">&#128566</span>
+              <span class="emoji" onclick="insertEmoji('&#128567')">&#128567</span>
+              <span class="emoji" onclick="insertEmoji('&#128568')">&#128568</span>
+              <span class="emoji" onclick="insertEmoji('&#128569')">&#128569</span>
+              <span class="emoji" onclick="insertEmoji('&#128570')">&#128570</span>
+              <span class="emoji" onclick="insertEmoji('&#128571')">&#128571</span>
+              <span class="emoji" onclick="insertEmoji('&#128572')">&#128572</span>
+              <span class="emoji" onclick="insertEmoji('&#128573')">&#128573</span>
+              <span class="emoji" onclick="insertEmoji('&#128574')">&#128574</span>
+              <span class="emoji" onclick="insertEmoji('&#128575')">&#128575</span>
+              <span class="emoji" onclick="insertEmoji('&#128576')">&#128576</span>
+              <span class="emoji" onclick="insertEmoji('&#128577')">&#128577</span>
+              <span class="emoji" onclick="insertEmoji('&#128578')">&#128578</span>
+              <span class="emoji" onclick="insertEmoji('&#128579')">&#128579</span>
+              <span class="emoji" onclick="insertEmoji('&#128580')">&#128580</span>
+              <span class="emoji" onclick="insertEmoji('&#129296')">&#129296</span>
+              <span class="emoji" onclick="insertEmoji('&#129297')">&#129297</span>
+              <span class="emoji" onclick="insertEmoji('&#129298')">&#129298</span>
+              <span class="emoji" onclick="insertEmoji('&#129299')">&#129299</span>
+              <span class="emoji" onclick="insertEmoji('&#129300')">&#129300</span>
+              <span class="emoji" onclick="insertEmoji('&#129301')">&#129301</span>
+              <span class="emoji" onclick="insertEmoji('&#129302')">&#129302</span>
+              <span class="emoji" onclick="insertEmoji('&#129303')">&#129303</span>
+              <span class="emoji" onclick="insertEmoji('&#129304')">&#129304</span>
+              <span class="emoji" onclick="insertEmoji('&#129305')">&#129305</span>
+              <span class="emoji" onclick="insertEmoji('&#129306')">&#129306</span>
+              <span class="emoji" onclick="insertEmoji('&#129307')">&#129307</span>
+              <span class="emoji" onclick="insertEmoji('&#129308')">&#129308</span>
+              <span class="emoji" onclick="insertEmoji('&#129309')">&#129309</span>
+              <span class="emoji" onclick="insertEmoji('&#129310')">&#129310</span>
+              <span class="emoji" onclick="insertEmoji('&#129311')">&#129311</span>
+              <span class="emoji" onclick="insertEmoji('&#129312')">&#129312</span>
+              <span class="emoji" onclick="insertEmoji('&#129313')">&#129313</span>
+              <span class="emoji" onclick="insertEmoji('&#129314')">&#129314</span>
+              <span class="emoji" onclick="insertEmoji('&#129315')">&#129315</span>
+              <span class="emoji" onclick="insertEmoji('&#129316')">&#129316</span>
+              <span class="emoji" onclick="insertEmoji('&#129317')">&#129317</span>
+              <span class="emoji" onclick="insertEmoji('&#129319')">&#129319</span>
+              <span class="emoji" onclick="insertEmoji('&#129320')">&#129320</span>
+              <span class="emoji" onclick="insertEmoji('&#129321')">&#129321</span>
+              <span class="emoji" onclick="insertEmoji('&#129322')">&#129322</span>
+              <span class="emoji" onclick="insertEmoji('&#129323')">&#129323</span>
+              <span class="emoji" onclick="insertEmoji('&#129324')">&#129324</span>
+              <span class="emoji" onclick="insertEmoji('&#129325')">&#129325</span>
+              <span class="emoji" onclick="insertEmoji('&#129326')">&#129326</span>
+              <span class="emoji" onclick="insertEmoji('&#129327')">&#129327</span>
+              <span class="emoji" onclick="insertEmoji('&#129488')">&#129488</span>
+          </div>
+          
+          <div id="anonymous-options">
+            <!--<input type="text" id="anonymous-name" placeholder="输入您的名字（若要匿名发布，请勿输入名字，因为此输入框的优先级比右边那个“匿名发布”按钮的优先级更高。）">-->
+            <textarea type="text" id="anonymous-name" placeholder="输入您的名字或其他能够让我知道您是谁的信息（若想匿名发布，请勿输入信息，因为此输入框的优先级比下边那个“匿名发布”按钮的优先级更高。也就是说，如果您在此输入框输入了信息，那么即便您点击了下边的“匿名发布”按钮后再点击“发布留言”按钮，您的留言也会以非匿名的方式发布。）"></textarea>
+            <button class="button" id="anonymous-publish">匿名发布</button>
+            <p></p>
+          </div>
+        </div>
+  
+        <div id="button-container">
+          <button class="button" id="anonymous-toggle">是否匿名</button>
+          <button class="button" id="post-button" onclick="postMessage()">发布留言</button>
+        </div>
+      </div>
+
+        <div id="message-list" class="limited-height"></div>
+  
+      <div id="notification"></div>
+
+      <script src="Mathjax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+              jax: ["input/TeX", "output/HTML-CSS"],
+              messageStyle: 'none',
+              tex2jax: {
+                  inlineMath:  [ ["$", "$"] ],
+                  displayMath: [ ["$$","$$"] ],
+                  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                  ignoreClass:"class1"
+              },
+              TeX: {
+                extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js'],
+                equationNumbers: { autoNumber: "AMS" },
+              },
+              "HTML-CSS": {
+                  showMathMenu: false
+              },
+              showProcessingMessages: false,
+              messageStyle: "none"
+          });
+      </script>
+        <script type="text/javascript" src="js/messages.js"></script>
+        <script type="text/javascript" src="js/script.js"><script/>
+    </body>
+</html>

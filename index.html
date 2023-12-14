@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>新平中之家</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/messages.css">
+        <link rel="stylesheet" href="css/overflow.css">
+    </head>
+
+    <body background="images/background.jpg">
+        <div  style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
+
+            <!--首页介绍框-->
+            <div class="box-head">
+                <img src="images/Einstein.jpg"/>
+                <br/>新平中之家
+                <p style="font-size: 1.5rem; color: rgba(78, 220, 245, 1);">机构：合肥某技校</p>
+                <p style="font-size: 1.5rem; color: rgba(78, 220, 245, 1);">邮箱：wu_gy@mail.(该技校之英文缩写).edu.cn</p>
+                <p style="font-size: 1.5rem; color: rgba(78, 220, 245, 1);">你好，我是平中。此为我之新主页。多年前之那个<a href="https://wu-kuan-yee.github.io/homepage/"  class="box-link">旧主页</a>现已基本处于废弃不用之状态。我目前在一所位于合肥之技校读书。我主要学物理，亦对数学、计算机等感兴趣。我每至夏日便好游泳、中短途自行车骑行。我亦常挑战自己之睡眠时长极限，最长之一次睡眠时间约为27h。</p>
+                <p style="font-size: 1.5rem; color: rgba(78, 220, 245, 1);">此网站主要用于上传我之一些学习笔记及各种杂项信息。</p>
+            </div>
+
+            <!--分辨率提示-->
+            <!--<div style="background-color: rgba(0, 0, 0, 0.7); position: relative; top: 10rem; left: auto; right: auto; bottom: 0; width: 100%; padding: 1rem; border-radius: 0;">
+              <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 1); text-align: center; position: relative; top: 0; left: auto; right: auto; bottom: 0;">此网页之html+css+js源代码写成时所用之电脑显示器分辨率为2560$\times$1080。在其他分辨率的页面上显示可能会让页面布局略微发生变化。如果在您的浏览器中发现页面杂乱无章之程度过于离谱，请考虑设置一下屏幕分辨率~</p>
+            </div>-->
+    
+            <!--顶部按钮-->
+            <div class="button-container">
+                <button class="box-button" onclick="window.location.href ='index.html'">首页</button>
+                <button class="box-button" onclick="window.location.href ='article.html'">文章</button>
+                <button class="box-button" onclick="window.location.href ='amusement.html'">娱乐</button>
+                <button class="box-button" onclick="window.location.href ='sundries.html'">杂项</button>
+                <!--<button class="box-button" onclick="window.location.href ='messages.html'">留言</button>-->
+            </div>
+
+		<!--时钟-->
+		<div id="clock-container2">
+            <div id="clock-container">
+            <div class="fill">
+              <div class="reference"></div>
+              <div class="clock" id="utility-clock">
+                <div class="centre">
+                  <div class="dynamic"></div>
+                  <div class="expand round circle-1"></div>
+                  <div class="anchor hour">
+                    <div class="element thin-hand"></div>
+                    <div class="element fat-hand"></div>
+                  </div>
+                  <div class="anchor minute">
+                    <div class="element thin-hand"></div>
+                    <div class="element fat-hand minute-hand"></div>
+                  </div>
+                  <div class="anchor second">
+                    <div class="element second-hand"></div>
+                  </div>
+                  <div class="expand round circle-2"></div>
+                  <div class="expand round circle-3"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <!--Live2d动漫人物-->
+        <div class="content">
+          <script src="live2DModel-master/l2dwidget.min.js"></script>
+          <script type="text/javascript">
+            L2Dwidget.init({
+            model: {
+              jsonPath: 'live2DModel-master/tororo/assets/tororo.model.json',
+            },
+            display: {
+              superSample: 3,
+              position: 'left',
+              hOffset: 50,
+              vOffset: -200,
+            },
+            mobile: {
+              show: true,
+              scale: 1,
+              motion: true,
+            },
+            react: {
+              opacityDefault: 1.0,
+              opacityOnHover: 1.0,
+            },
+            })
+          </script>
+        </div>
+    
+      </div>
+
+        <script type="text/javascript" src="js/clock.js"></script>
+        <script src="Mathjax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+              jax: ["input/TeX", "output/HTML-CSS"],
+              messageStyle: 'none',
+              tex2jax: {
+                  inlineMath:  [ ["$", "$"] ],
+                  displayMath: [ ["$$","$$"] ],
+                  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                  ignoreClass:"class1"
+              },
+              TeX: {
+                extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js'],
+                equationNumbers: { autoNumber: "AMS" },
+              },
+              "HTML-CSS": {
+                  showMathMenu: false
+              },
+              showProcessingMessages: false,
+              messageStyle: "none"
+          });
+      </script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

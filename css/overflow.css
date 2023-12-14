@@ -1,0 +1,42 @@
+.limited-height {
+  max-height: 45rem;
+  overflow-y: auto;
+}
+
+/* Webkit browsers */
+.limited-height::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+.limited-height::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 1rem;
+}
+
+/* Firefox */
+.limited-height {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+/* 给摘要准备的limited-height */
+.abstract-limited-height {
+  max-height: 35rem;
+  overflow-y: auto;
+}
+
+/* Webkit browsers */
+.abstract-limited-height::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+.abstract-limited-height::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 1rem;
+}
+
+/* Firefox */
+.abstract-limited-height {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}

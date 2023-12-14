@@ -1,0 +1,455 @@
+html{
+  font-size: 100%;
+}
+
+body{
+    font-family: 'Times New Roman', '楷体', sans-serif;
+    font-size: 1rem;
+    user-select: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: fit-content;
+    height: fit-content;
+}
+
+a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition:all .5s;
+}
+
+a:hover{
+    transform: 1.2;
+}
+
+
+img{
+    border-radius: 20rem;
+    overflow: hidden;
+    width: 10rem;
+    -webkit-user-drag: none;
+}
+
+.box-head{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(245, 221, 115, 1);
+    font-size: 3rem;
+    text-align: center; /*让div内部文字居中*/
+	border-radius: 2rem;
+	width: 50rem;
+	height: 40rem;
+	margin: auto;
+    padding: 2rem;
+	position: relative;
+	top: 2rem;
+	left: auto;
+  transition:all .5s; /*鼠标悬停在上面时放大的速度(需要花0.5秒才能放大完成，同样鼠标离开后也需要花0.5秒才能缩小完成)*/
+}
+
+.box-head:hover {
+  transform: scale(1.2); /*鼠标悬停在上面时放大的倍数(1.2倍)*/
+}
+
+.box-article{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(245, 221, 115, 1);
+  font-size: 3rem;
+  text-align: center; /*让div内部文字居中*/
+border-radius: 2rem;
+width: 35rem;
+height: 15rem;
+margin: auto;
+  padding: 2rem;
+position: absolute;
+top: 20rem;
+left: 5rem;
+transition:all .5s;
+}
+
+.box-article:hover {
+  transform: scale(1.2);
+}
+
+.box-amusement{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(245, 221, 115, 1);
+  font-size: 3rem;
+  text-align: center; /*让div内部文字居中*/
+border-radius: 2rem;
+width: 35rem;
+height: 15rem;
+margin: auto;
+  padding: 2rem;
+position: absolute;
+top: 20rem;
+left: 5rem;
+transition:all .5s;
+}
+
+.box-amusement:hover {
+  transform: scale(1.2);
+}
+
+.box-sundries{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(245, 221, 115, 1);
+  font-size: 3rem;
+  text-align: center; /*让div内部文字居中*/
+border-radius: 2rem;
+width: 35rem;
+height: 15rem;
+margin: auto;
+  padding: 2rem;
+position: absolute;
+top: 20rem;
+left: 5rem;
+transition:all .5s;
+}
+
+.box-sundries:hover {
+  transform: scale(1.2);
+}
+
+.box-messages{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(245, 221, 115, 1);
+    font-size: 2rem;
+    text-align: center; /*让div内部文字居中*/
+	border-radius: 1rem;
+	width: 20rem;
+	height: 18rem;
+	margin: auto;
+    padding: 2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  transition:all .5s;
+}
+
+.box-messages:hover {
+  transform: scale(1.2);
+}
+
+.box-link{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 0.2rem;
+    transition:all .5s;
+}
+
+.box-link:hover {
+  transform: scale(1.2);
+}
+
+.button-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box-button{
+    width: 6rem;
+    height: 3rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    border-style: none;
+    margin: 1rem 1rem 1rem 1rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    font-family: 'Times New Roman', '楷体', sans-serif;
+    font-size: 1.5rem;
+    transition:all .5s;
+}
+
+.box-button:hover {
+    transform: scale(1.2);
+  }
+
+/* 时钟样式*/
+/*body {
+  background: black;
+}*/
+
+.clock {
+    position: absolute;
+    opacity: 1;
+    right: 0;
+  }
+  
+  .fill .clock {
+    position: relative;
+    left: 50%;
+    top: 50%;
+  }
+  
+  .centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+  }
+  
+  .expand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0.7; /* 添加透明度属性，可以根据需要修改，1 表示完全不透明，0 表示完全透明 */
+  }
+  
+  .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7; /* 添加透明度属性，可以根据需要修改，1 表示完全不透明，0 表示完全透明 */
+  }
+  
+  .round {
+    border-radius: 296rem;
+  }
+  
+  .circle-1 {
+    background: white;
+    width: 0.8rem;
+    height: 0.8rem;
+    opacity: 0.7; /* 添加透明度属性，可以根据需要修改，1 表示完全不透明，0 表示完全透明 */
+  }
+  
+  .circle-2 {
+    background: #FA9F22;
+    width: 0.6rem;
+    height: 0.6rem;
+    opacity: 0.7; /* 添加透明度属性，可以根据需要修改，1 表示完全不透明，0 表示完全透明 */
+  }
+  
+  .circle-3 {
+    background: black;
+    width: 0.3rem;
+    height: 0.3rem;
+    opacity: 0.7; /* 添加透明度属性，可以根据需要修改，1 表示完全不透明，0 表示完全透明 */
+  }
+  
+  .second {
+    transform: rotate(180deg);
+  }
+  
+  .minute {
+    transform: rotate(54deg);
+  }
+  
+  .second-hand {
+    width: 0.2rem;
+    height: 10.2rem;
+    background: #FA9F22;
+    transform: translate(-50%,-100%) translateY(1.4rem);
+    border-radius: 10rem;
+  }
+  
+  .hour {
+    transform: rotate(304.5deg);
+  }
+  
+  .thin-hand {
+    width: 0.2rem;
+    height: 1.15rem;
+    background: white;
+    transform: translate(-50%,-100%);
+  }
+  
+  .fat-hand {
+    width: 0.5rem;
+    height: 4rem;
+    border-radius: 10rem;
+    background: white;
+    transform: translate(-50%,-100%) translateY(-1.13rem);
+  }
+  
+  .minute-hand {
+    height: 7rem;
+  }
+  
+  .hour-text {
+    position: absolute;
+    font-family: 2.5rem 'Times New Roman', '楷体', sans-serif;
+    font-size: 2rem;
+    color: white;
+    transform: translate(-50%,-50%);
+  }
+  
+  .hour-10 {
+    padding-left: 0.4rem;
+  }
+  .hour-11 {
+    padding-left: 0.25rem;
+  }
+  
+  .minute-text {
+    position: absolute;
+    font-family: 1rem 'Times New Roman', '楷体', sans-serif;
+    color: white;
+    transform: translate(-50%,-50%);
+  }
+  
+  .minute-line {
+    background: white;
+    width: 0.08rem;
+    height: 0.6rem;
+    transform: translate(-50%,-100%) translateY(-8.2rem);
+    opacity: 0.34;
+  }
+
+  #clock-container2 {
+      width: 30rem; /* 调整宽度，根据需要 */
+      height: 30rem; /* 调整高度，根据需要 */
+      background-color: rgba(255, 255, 255, 0.3); /* 半透明灰色背景 */
+      border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; /* 上半部分为半圆形 */
+      /*overflow: hidden; /* 超出部分隐藏 */
+      position: absolute;
+      top: 10rem;
+      left: 120rem;
+      /*transform: translate(80%, 0);*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition:all .5s;
+    }
+
+    #clock-container2:hover{
+      /* 放大1.2倍 */
+      transform: scale(1.2);
+    }
+  
+  #clock-container {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    /*transform: translate(-50%, -50%);*/
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #utility-clock {
+    width: 0; /* 调整表盘的宽度，可以根据需要修改 */
+    height: 0; /* 调整表盘的高度，可以根据需要修改 */
+    /* 表盘的其他样式，保持不变 */
+  }
+  
+  
+  
+  
+  /* 日期和时间 */
+  /* 添加到你的样式表中 */
+  
+  .date,
+  .time {
+      position: absolute;
+      font-size: 1.1rem; /* 调整字号，可以根据需要修改 */
+      color: #fff;
+      text-align: center; /* 文字居中 */
+      font-family: 'Times New Roman', '楷体', Times, sans-serif; /* 使用 Times New Roman 字体，可以根据需要修改 */
+      /* 添加其他样式属性，以适应你的设计需求 */
+  }
+  
+  .date {
+      top: 4rem; /* 上半部分的垂直位置，可以根据需要修改 */
+      left: 50%; /* 水平位置居中 */
+      transform: translateX(-50%); /* 通过 transform 调整水平位置 */
+      white-space: nowrap; /* 防止文本换行 */
+  }
+  
+  .time {
+      bottom: 4rem; /* 下半部分的垂直位置，可以根据需要修改 */
+      left: 50%; /* 水平位置居中 */
+      transform: translateX(-50%); /* 通过 transform 调整水平位置 */
+  }
+
+  /* 加入Live2D猫 */
+  .content img {
+    float: center;
+    width: 16rem;
+    height: 16rem;
+    margin: 0 0 0 0;
+    border-radius: 8rem;
+  }
+
+  .content:hover {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.52);
+  }
+
+  .content_r {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 10rem;
+    /*	background-color: pink;*/
+  }
+  
+  .content_l {
+    float: center;
+    width: auto;
+    height: 0;
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+
+  .content_l h5 {
+
+    font-size: 2.7rem;
+  }
+
+  /* 让标题自动编号与标题字体适配 */
+  ol {
+    list-style-type: none;
+    counter-reset: heading-counter;
+  }
+
+  li {
+    counter-increment: heading-counter;
+    margin-bottom: 1rem;
+  }
+
+  h2::before {
+    content: counter(heading-counter) ". ";
+    font-size: inherit;
+    margin-right: 0.5rem;
+  }
+
+  /* 定制滚动条样式 */
+  /* Firefox */
+/*.limited-height {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}*/
+
+/* Edge */
+/*.limited-height {
+  -ms-overflow-style: none;
+}
+
+.limited-height::-ms-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
+}*/

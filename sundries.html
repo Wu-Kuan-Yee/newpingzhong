@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>杂项</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/overflow.css">
+    </head>
+
+    <body background="images/background.jpg">
+        <div  style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
+
+            <!--杂项介绍框-->
+            <div class="box-sundries">
+                <p style="font-size: 3rem; color: rgba(245, 221, 115, 1);">杂项</p>
+                <p style="font-size: 1.8rem; color: rgba(78, 220, 245, 1);">此处主要上传一些难以归类之杂项内容。</p>
+            </div>
+    
+            <!--顶部按钮-->
+            <div class="button-container">
+                <button class="box-button" onclick="window.location.href ='index.html'">首页</button>
+                <button class="box-button" onclick="window.location.href ='article.html'">文章</button>
+                <button class="box-button" onclick="window.location.href ='amusement.html'">娱乐</button>
+                <button class="box-button" onclick="window.location.href ='sundries.html'">杂项</button>
+                <!--<button class="box-button" onclick="window.location.href ='messages.html'">留言</button>-->
+            </div>
+            
+        </div>
+
+        <script src="Mathjax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+              jax: ["input/TeX", "output/HTML-CSS"],
+              messageStyle: 'none',
+              tex2jax: {
+                  inlineMath:  [ ["$", "$"] ],
+                  displayMath: [ ["$$","$$"] ],
+                  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                  ignoreClass:"class1"
+              },
+              TeX: {
+                extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js'],
+                equationNumbers: { autoNumber: "AMS" },
+              },
+              "HTML-CSS": {
+                  showMathMenu: false
+              },
+              showProcessingMessages: false,
+              messageStyle: "none"
+          });
+      </script>
+        <script type="text/javascript" src="js/script.js"><script/>
+    </body>
+</html>
