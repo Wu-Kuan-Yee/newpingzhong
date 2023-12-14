@@ -1,9 +1,10 @@
 html{
+  font-family: 'myenfont', 'myzhfont', sans-serif;
   font-size: 100%;
 }
 
 body{
-    font-family: 'Times New Roman', '楷体', sans-serif;
+    font-family: 'myenfont', 'myzhfont', sans-serif;
     font-size: 1rem;
     user-select: none;
     background-repeat: no-repeat;
@@ -166,7 +167,7 @@ transition:all .5s;
     left: auto;
     right: auto;
     bottom: auto;
-    font-family: 'Times New Roman', '楷体', sans-serif;
+    font-family: 'myenfont', 'myzhfont', sans-serif;
     font-size: 1.5rem;
     transition:all .5s;
 }
@@ -289,7 +290,7 @@ transition:all .5s;
   
   .hour-text {
     position: absolute;
-    font-family: 2.5rem 'Times New Roman', '楷体', sans-serif;
+    font-family: 2.5rem 'myenfont', 'myzhfont', sans-serif;
     font-size: 2rem;
     color: white;
     transform: translate(-50%,-50%);
@@ -304,7 +305,7 @@ transition:all .5s;
   
   .minute-text {
     position: absolute;
-    font-family: 1rem 'Times New Roman', '楷体', sans-serif;
+    font-family: 1rem 'myenfont', 'myzhfont', sans-serif;
     color: white;
     transform: translate(-50%,-50%);
   }
@@ -371,7 +372,7 @@ transition:all .5s;
       font-size: 1.1rem; /* 调整字号，可以根据需要修改 */
       color: #fff;
       text-align: center; /* 文字居中 */
-      font-family: 'Times New Roman', '楷体', Times, sans-serif; /* 使用 Times New Roman 字体，可以根据需要修改 */
+      font-family: 'myenfont', 'myzhfont', sans-serif; /* 使用 Times New Roman 字体，可以根据需要修改 */
       /* 添加其他样式属性，以适应你的设计需求 */
   }
   
