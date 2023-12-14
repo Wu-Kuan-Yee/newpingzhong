@@ -5,10 +5,13 @@
         <title>娱乐</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/overflow.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
-    <body background="images/background.jpg">
-        <div  style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
+    <!--<body background="images/background.jpg">-->
+        <body>
+            <div class="canvas-wrap">
+        <div class="canvas-content" style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
 
             <!--娱乐介绍框-->
             <div class="box-amusement">
@@ -26,6 +29,9 @@
             </div>
             
         </div>
+
+        <div id="canvas" class="gradient"></div>
+    </div>
 
         <script src="Mathjax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">
@@ -50,6 +56,22 @@
               messageStyle: "none"
           });
       </script>
+
+      <!--引入可与鼠标交互的动态背景-->
+      <!-- Main library -->
+<script src="js/three.min.js"></script>
+  
+<!-- Helpers -->
+<script src="js/projector.js"></script>
+<script src="js/canvas-renderer.js"></script>
+  
+<!-- Visualitzation adjustments -->
+<script src="js/3d-lines-animation.js"></script>
+  
+<!-- Animated background color -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/color.js"></script>
+
         <script type="text/javascript" src="js/script.js"><script/>
     </body>
 </html>
