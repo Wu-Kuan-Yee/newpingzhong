@@ -1,0 +1,54 @@
+.video-box{
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 1.5rem;
+    color: rgba(78, 220, 245, 1);
+    text-align: left;
+	border-radius: 1rem;
+	width: 77rem;
+    padding: 2rem;
+	position: relative;
+    top: 3rem;
+    left: 50rem;
+    max-height: 40rem; /* 设置最大高度 */
+    overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}
+
+.sundries{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+	border-radius: 1rem;
+	width: 90rem;
+    padding: 2rem;
+	position: relative;
+	top: 3rem;
+	left: 50rem;
+	right: auto;
+    bottom: auto;
+    max-height: 30rem; /* 设置最大高度 */
+    overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}
+
+.sundries p{
+    text-indent: 2em; /* 段首缩进两个字符 */
+}
+
+.sundries-abstract{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.6rem;
+	border-radius: 1rem;
+	width: 30rem;
+    padding: 2rem;
+	position: absolute;
+	top: 10rem;
+	left: 5rem;
+	right: auto;
+    bottom: auto;
+    max-height: 30rem; /* 设置最大高度 */
+    overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+}
+
+.sundries-abstract p{
+    text-indent: 2em; /* 段首缩进两个字符 */
+}
