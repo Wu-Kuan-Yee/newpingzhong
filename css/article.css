@@ -2,6 +2,7 @@
     background-color: rgba(255, 255, 255, 0.15);
     font-size: 1.5rem;
     color: rgba(78, 220, 245, 1);
+    text-align: center;
 	border-radius: 1rem;
 	width: 90rem;
     padding: 2rem;
@@ -13,8 +14,8 @@
 }
 
 .article-button{
-    width: 15rem;
-    height: 5rem;
+    width: 60rem;
+    height: 15rem;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
