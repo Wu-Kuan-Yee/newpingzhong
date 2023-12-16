@@ -9,14 +9,14 @@
 }
 
 .limited-height::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 150, 0.1);
+  background-color: rgb(255, 255, 150, 0.2);
   border-radius: 1rem;
 }
 
 /* Firefox */
 .limited-height {
   scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 150, 0.1) transparent;
+  scrollbar-color: rgb(255, 255, 150, 0.2) transparent;
 }
 
 /* 给摘要准备的limited-height */
@@ -31,12 +31,12 @@
 }
 
 .abstract-limited-height::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 150, 0.1);
+  background-color: rgb(255, 255, 150, 0.2);
   border-radius: 1rem;
 }
 
 /* Firefox */
 .abstract-limited-height {
   scrollbar-width: thin;
-  scrollbar-color: rgb(255, 255, 150, 0.1) transparent;
+  scrollbar-color: rgb(255, 255, 150, 0.2) transparent;
 }

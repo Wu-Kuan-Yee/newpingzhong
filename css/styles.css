@@ -33,7 +33,7 @@ img{
 }
 
 .box-head{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.15);
     color: rgba(245, 221, 115, 1);
     font-size: 3rem;
     text-align: center; /*让div内部文字居中*/
@@ -53,7 +53,7 @@ img{
 }
 
 .box-article{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
   color: rgba(245, 221, 115, 1);
   font-size: 3rem;
   text-align: center; /*让div内部文字居中*/
@@ -73,7 +73,7 @@ transition:all .5s;
 }
 
 .box-amusement{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
   color: rgba(245, 221, 115, 1);
   font-size: 3rem;
   text-align: center; /*让div内部文字居中*/
@@ -93,7 +93,7 @@ transition:all .5s;
 }
 
 .box-sundries{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
   color: rgba(245, 221, 115, 1);
   font-size: 3rem;
   text-align: center; /*让div内部文字居中*/
@@ -113,7 +113,7 @@ transition:all .5s;
 }
 
 .box-messages{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.15);
     color: rgba(245, 221, 115, 1);
     font-size: 2rem;
     text-align: center; /*让div内部文字居中*/
@@ -321,7 +321,7 @@ transition:all .5s;
   #clock-container2 {
       width: 30rem; /* 调整宽度，根据需要 */
       height: 30rem; /* 调整高度，根据需要 */
-      background-color: rgba(255, 255, 255, 0.3); /* 半透明灰色背景 */
+      background-color: rgba(255, 255, 255, 0.1); /* 半透明灰色背景 */
       border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; /* 上半部分为半圆形 */
       /*overflow: hidden; /* 超出部分隐藏 */
       position: absolute;
@@ -347,7 +347,7 @@ transition:all .5s;
     width: 19rem;
     height: 19rem;
     border-radius: 50rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -494,4 +494,15 @@ code{
 }
 pre>code{
 	cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Copy.cur), default;	
+}
+
+/* 隐藏默认控制条 */
+video:hover::-webkit-media-controls {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+  cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Arrow.cur), default;
+}
+/* 鼠标悬停时改变鼠标样式 */
+video:hover::before {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+  cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Arrow.cur), default;
 }

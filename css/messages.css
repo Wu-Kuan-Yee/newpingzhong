@@ -3,7 +3,7 @@
   width: 800px;
   margin: 0 0;
   padding: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -11,6 +11,11 @@
   position: absolute;
   top: 150px;
   left: 50px;
+  transition:all .5s;
+}
+
+#message-board:hover {
+  transform: scale(1.05); /*鼠标悬停在上面时放大的倍数(1.2倍)*/
 }
 
 #message-input {
@@ -40,7 +45,7 @@
 }
 
 #message-list {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
   margin-top: 100px;
   padding: 20px;
   border-radius: 10px;
@@ -51,6 +56,11 @@
   position: absolute;
   top: 50px;
   left: 1000px;
+  transition:all .5s;
+}
+
+#message-list:hover {
+  transform: scale(1.05); /*鼠标悬停在上面时放大的倍数(1.2倍)*/
 }
 
 #delete-button {
@@ -86,7 +96,7 @@ background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 150px;
   left: 500px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   padding: 1rem;
