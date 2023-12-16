@@ -11,7 +11,12 @@
     left: 50rem;
     max-height: 40rem; /* 设置最大高度 */
     overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+    transition:all .5s;
 }
+
+.video-box:hover {
+    transform: scale(1.05);
+  }
 
 .sundries{
     background-color: rgba(0, 0, 0, 0.2);

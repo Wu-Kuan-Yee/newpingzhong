@@ -11,7 +11,12 @@
     left: 50rem;
     max-height: 30rem; /* 设置最大高度 */
     overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+    transition:all .5s;
 }
+
+.article-box:hover {
+    transform: scale(1.05);
+  }
 
 .article-button{
     width: 60rem;
@@ -50,7 +55,12 @@
     bottom: auto;
     max-height: 30rem; /* 设置最大高度 */
     overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+    transition:all .5s;
 }
+
+.article:hover {
+    transform: scale(1.05);
+  }
 
 .article p{
     text-indent: 2em; /* 段首缩进两个字符 */
@@ -70,7 +80,12 @@
     bottom: auto;
     max-height: 30rem; /* 设置最大高度 */
     overflow: auto; /* 当内容超过最大高度时显示滚动条 */
+    transition:all .5s;
 }
+
+.article-abstract:hover {
+    transform: scale(1.05);
+  }
 
 .article-abstract p{
     text-indent: 2em; /* 段首缩进两个字符 */
