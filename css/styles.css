@@ -473,24 +473,25 @@ transition:all .5s;
 }
 
 /* 鼠标指针样式 */
+/*此为笔者网站较为个性化的鼠标指针样式，可结合个人需要自行修改*/
 body {
-	cursor: url(../Deepin2-Dark/Arrow.cur), default;
+	cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Arrow.cur), default;
 }
 select{
-	cursor: url(../Deepin2-Dark/Hand.cur), pointer;
+	cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Hand.cur), pointer;
 }
 button,a:hover{
-	cursor: url(../Deepin2-Dark/Hand2.cur), pointer;
+	cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Hand.cur), pointer;
 }
 input{
-	cursor:url(../Deepin2-Dark/Help.cur), text;	
+	cursor:url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Help.cur), text;	
 }
 textarea,input:focus{
-	cursor:url(../Deepin2-Dark/IBeam.cur), text;	
+	cursor:url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/IBeam.cur), text;	
 }
 code{
-	cursor: url(../Deepin2-Dark/Handwriting.cur), default;	
+	cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Handwriting.cur), default;	
 }
 pre>code{
-	cursor: url(../Deepin2-Dark/Copy.cur), default;	
+	cursor: url(../mouse/Hacked_Mod_Cursors_Co/Hacked_Mod_Cursors_Co/Hacked_Mod_Blue/Copy.cur), default;	
 }
