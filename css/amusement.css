@@ -1,8 +1,8 @@
-.article-box{
+.game-box{
     background-color: rgba(255, 255, 255, 0.15);
     font-size: 1.5rem;
     color: rgba(78, 220, 245, 1);
-    text-align: center;
+    text-align: left;
 	border-radius: 1rem;
 	width: 90rem;
     padding: 2rem;
@@ -14,13 +14,13 @@
     transition:all .5s;
 }
 
-.article-box:hover {
+.game-box:hover {
     transform: scale(1.05);
   }
 
-.article-button{
-    width: 60rem;
-    height: 15rem;
+.game-button{
+    width: 19rem;
+    height: 5rem;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -37,11 +37,11 @@
     transition:all .5s;
 }
 
-.article-button:hover {
+.game-button:hover {
     transform: scale(1.05);
   }
 
-.article{
+.game{
     background-color: rgba(0, 0, 0, 0.15);
     color: rgba(255, 255, 255, 1);
     font-size: 1.6rem;
@@ -58,15 +58,15 @@
     transition:all .5s;
 }
 
-.article:hover {
+.game:hover {
     transform: scale(1.05);
   }
 
-.article p{
+.game p{
     text-indent: 2em; /* 段首缩进两个字符 */
 }
 
-.article-abstract{
+.game-abstract{
     background-color: rgba(255, 255, 255, 0.05);
     color: rgba(0, 0, 0, 1);
     font-size: 1.6rem;
@@ -83,10 +83,10 @@
     transition:all .5s;
 }
 
-.article-abstract:hover {
+.game-abstract:hover {
     transform: scale(1.05);
   }
 
-.article-abstract p{
+.game-abstract p{
     text-indent: 2em; /* 段首缩进两个字符 */
 }

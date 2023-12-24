@@ -1,0 +1,165 @@
+.main {
+    margin:1rem auto;
+    padding: 2rem;
+    background:rgba(0, 0, 0, 0.5);
+    width:36rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 5rem;
+    left: 60rem;
+    text-align: center;
+    /*zoom:1;*/
+}
+
+    .main table {
+        background:rgba(150, 150, 0, 0.5);
+        float:center;
+    }
+
+        .main table td {
+            border:0.2rem outset rgba(255, 150, 255, 0.5);
+            font-size:2rem;
+            width:3rem;
+            height:3rem;
+            text-align:center;
+            cursor:pointer;
+        }
+
+            .main table td:hover {
+                background-color:rgba(0, 0, 0, 0.5);
+            }
+    .main #operation {
+        width:18rem;
+        float:right;
+        text-align:center;
+    }
+
+.landMine {
+    background-image:url(mine.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.main table td.normal {
+    border:0.2rem solid rgba(0, 0, 0, 0,5);
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+.main table td.normal:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.flag {
+    background-image:url(flag.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+    .main:after {
+        clear: both;
+        display: block;
+        content: "";
+        line-height: 0;
+        height: 0;
+        visibility:hidden;
+    }
+.main .tip {
+    font-size:1rem;
+    margin:0.5rem;
+}
+
+    .main .tip ul {
+
+    }
+
+        .main .tip ul li {
+            margin:0.5rem 0;
+            line-height:2rem;
+        }
+.main .light{
+    font-size:3rem;
+}
+.main .red {
+    color:rgba(255, 0, 0, 1);
+}
+.main .f60 {
+    color:rgba(255, 100, 0, 1);
+}
+.main input[type=button] {
+    padding:0.5rem 1rem;
+    margin:0.5rem;
+    font-size:2rem;
+    cursor:pointer;
+}
+    .main .txtleft {
+        text-align:left;
+    }
+
+.main input[type='radio'],
+.main fieldset label {
+    cursor:pointer;
+}
+
+.main fieldset {
+    margin:1rem 0;
+    line-height:2.5rem;
+}
+
+/* 以下是我自己加的，从github上下载的代码里没有 */
+
+/* 新增样式 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 80rem;
+    transform: translate(-50%, 50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 10rem;
+    height: 1.5rem;
+    color: white;
+    text-align: center;
+    display: none;
+    opacity: 0; /* 默认透明度为0 */
+    transition: opacity 1s ease; /* 添加过渡效果 */
+}
+
+.overlay.show {
+    opacity: 1; /* 显示时的透明度为1 */
+}
+
+/* 扫雷信息框 */
+.box-minesweeper {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    text-align: center; /*让div内部文字居中*/
+  border-radius: 2rem;
+  width: 20rem;
+  margin: auto;
+    padding: 2rem;
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  transition:all .5s;
+  }
+
+  .box-minesweeper:hover {
+    transform: scale(1.2);
+  }
+
+.minesweeper-button {
+    font-family: 'myenfont', 'myzhfont', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 4rem;
+    transition:all .5s;
+}
+
+.minesweeper-button:hover {
+    transform: scale(1.2);
+  }

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="../../js/prohibit_developer_mode.js"></script>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>扫雷</title>
+    <link href="../../images/Einstein.jpg" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/overflow.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="minesweeper.css"/>
+</head>
+<body>
+    <div class="canvas-wrap">
+<div class="canvas-content" style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
+
+    <!--顶部按钮-->
+    <div class="button-container">
+        <button class="box-button" onclick="window.location.href ='../../index.html'">首页</button>
+        <button class="box-button" onclick="window.location.href ='../../article.html'">文章</button>
+        <button class="box-button" onclick="window.location.href ='../../amusement.html'">娱乐</button>
+        <button class="box-button" onclick="window.location.href ='../../sundries.html'">杂项</button>
+        <button class="box-button" onclick="window.location.href ='../../amusement.html'">返回</button>
+        <!--<button class="box-button" onclick="window.location.href ='messages.html'">留言</button>-->
+    </div>
+
+    <!--扫雷游戏-->
+    <div id="JMS_main" class="main">
+        <table id="landmine"></table>
+    </div>
+
+    <div class="box-minesweeper">
+        <div id="operation">
+            <div class="tip">剩余雷数：<span class="light red" id="landMineCount">0</span> 个</div>
+            <div class="tip">游戏用时：<span class="light f60" id="costTime">0</span> 秒</div>
+            <br />
+            <fieldset>
+                <legend>难度选择</legend>
+                <input type="radio" name="level" id="llevel" checked="checked" value="10" style="padding: 2rem;"/><label for="llevel">初级（$10\times 10$）</label><br />
+                <input type="radio" name="level" id="mlevel" value="15" /><label for="mlevel">中级（$15\times 15$）</label><br />
+                <input type="radio" name="level" id="hlevel" value="20" /><label for="hlevel">高级（$20\times 20$）</label><br />
+            </fieldset>
+            <br />
+            <input type="button" id="begin" value="开始游戏" class="minesweeper-button" /><br /><br />
+            <div style="text-align: left;">提示：
+                <ul>
+                    <li>点击“开始游戏”游戏开始计时</li>
+                    <li>游戏过程中点击“开始游戏”将开始新游戏</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayCongrats">Congratulation!</div>
+    <div class="overlay" id="overlayGameOver">GAME OVER!</div>    
+
+</div>
+
+<div id="canvas" class="gradient"></div>
+</div>
+
+
+<script src="../../Mathjax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      messageStyle: 'none',
+      tex2jax: {
+          inlineMath:  [ ["$", "$"] ],
+          displayMath: [ ["$$","$$"] ],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+          ignoreClass:"class1"
+      },
+      TeX: {
+        extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js'],
+        equationNumbers: { autoNumber: "AMS" },
+      },
+      "HTML-CSS": {
+          showMathMenu: false
+      },
+      showProcessingMessages: false,
+      messageStyle: "none"
+  });
+</script>
+
+<!--引入可与鼠标交互的动态背景-->
+<!-- Main library -->
+<script src="../../js/three.min.js"></script>
+
+<!-- Helpers -->
+<script src="../../js/projector.js"></script>
+<script src="../../js/canvas-renderer.js"></script>
+
+<!-- Visualitzation adjustments -->
+<script src="../../js/3d-lines-animation.js"></script>
+
+<!-- Animated background color -->
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/color.js"></script>
+
+
+    <script src="jms.js"></script>
+    <script src="minesweeper.js"></script>
+</body>
+</html>
