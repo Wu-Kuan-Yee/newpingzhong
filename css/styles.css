@@ -472,6 +472,20 @@ transition:all .5s;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'mythmzhfont';
+  src: url('../fonts/simsun.ttc') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mythmempzhfont';
+  src: url('../fonts/simfang.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* 鼠标指针样式 */
 /*此为笔者网站较为个性化的鼠标指针样式，可结合个人需要自行修改*/
 body {

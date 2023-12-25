@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="../js/prohibit_developer_mode.js"></script>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Frobenius 定理在物理学中的应用</title>
+        <link href="../images/Einstein.jpg" rel="icon" type="image/x-ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/article.css">
+        <link rel="stylesheet" href="../css/overflow.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <!--<body background="images/background.jpg">-->
+        <body>
+            <div class="canvas-wrap">
+        <div class="canvas-content" style="max-width: 155rem; min-width: 155rem; max-height: 56rem; min-height: 56rem; background-color: rgba(255, 255, 255, 0);">
+    
+            <!--顶部按钮-->
+            <div class="button-container">
+                <button class="box-button" onclick="window.location.href ='../index.html'">首页</button>
+                <button class="box-button" onclick="window.location.href ='../article.html'">文章</button>
+                <button class="box-button" onclick="window.location.href ='../amusement.html'">娱乐</button>
+                <button class="box-button" onclick="window.location.href ='../sundries.html'">杂项</button>
+                <button class="box-button" onclick="window.location.href ='../article.html'">返回</button>
+                <!--<button class="box-button" onclick="window.location.href ='messages.html'">留言</button>-->
+            </div>
+
+            <!--文章简介-->
+            <div class="article-abstract abstract-limited-height">
+                <h1 style="text-align: center;">文章简介</h1>
+                <p>
+                    Frobenius 定理是微分几何中的一个重要定理, 它阐明了微分流形上的 $n$ 维分布可积的充要条件. 本文简要介绍 Frobenius 定理在物理学中的应用.
+                </p>
+            </div>
+
+            <!--文章-->
+            <div class="article limited-height">
+                <h1 style="text-align: center;">Frobenius 定理在物理学中的应用</h1>
+                <!--<p style="text-align: center;"><time id="article-time"></time></p>-->
+                <p style="text-align: center; text-indent: 0em;">2023 年 12 月 25 日</p>
+                <br/>
+                <ol>
+                <li><h2>Frobenius 定理的表述</h2></li>
+                <p style="font-family: 'mythmzhfont' , 'myenfont' , sans-serif; text-indent: 0;">
+                    定义 $1.1$ [微分流形上的分布]. 设 $\mathcal{M}$ 是一个 $n$ 维微分流形, $p$ 为 $\mathcal{M}$ 上的任一点, $T_{p}\mathcal{M}$ 为 $p$ 点切于 $\mathcal{M}$ 的切空间, $W_p$ 为 $T_{p}\mathcal{M}$ 的 $m$ 维子空间($m\le n$). 则 $\mathcal{M}$ 上所有点的 $W_p$ 的集合构成 $\mathcal{M}$ 上的一个 $m$ 维子空间场 $W$, 又称 $m$ 维分布. 若 $\forall p\in \mathcal{M}$, $\exists U\ni p$, 在 $U$ 上存在 $m$ 个 $C^r$ 矢量场 $e_1,\cdots,e_m$, 使得 $\forall q\in U$, $W_q=\mathrm{span}\left\{e_1,\cdots,e_m\right\}$, 则称 $m$ 维分布 $W$ 是 $C^r$ 的. 特别地, 若 $W$ 是 $C^\infty$ 的, 则称 $W$ 是光滑的. <font style="color: black;">今后若无特殊声明, 提及分布时一律指光滑分布.</font>
+                </p>
+                <br/>
+                <p style="font-family: 'mythmzhfont' , 'myenfont' , sans-serif; text-indent: 0;">
+                    定义 $1.2$ [分布的可积性]. 设 $\mathcal{M}$ 是一个 $n$ 维微分流形, $W$ 是 $\mathcal{M}$ 上的一个 $m$ 维分布. 若 $\mathcal{M}$ 上存在一个 $m$ 维嵌入子流形 $\mathcal{S}$, 使得 $\forall p\in\mathcal{S}$, $W_p=T_{p}\mathcal{S}$, 其中 $T_{p}\mathcal{S}$ 为 $p$ 点切于 $\mathcal{S}$ 的切空间, 则称 $W_p$ 是可积的, $\mathcal{S}$ 称为 $W$ 的积分子流形.
+                </p>
+                <br/>
+                <p style="font-family: 'mythmzhfont' , 'myenfont' , sans-serif; text-indent: 0;">
+                    定理 $1.1$ [Frobenius 定理]. 设 $\mathcal{M}$ 是一个 $n$ 维微分流形, $W$ 是 $\mathcal{M}$ 上的一个 $m$ 维分布. 则 $W$ 可积的充要条件是
+                    \begin{equation}
+                        \begin{aligned}
+                        &\mathrm{d}\omega^{\left(\alpha\right)}\wedge\Omega=0,\\
+                        &\Omega=\omega^{\left(1\right)}\wedge\cdots\wedge\omega^{\left(n-m\right)},
+                        \end{aligned}
+                    \end{equation}
+                    其中 $\omega^{\left(\alpha\right)}$ 为一组湮灭余失场, 满足
+                    \begin{equation*}
+                        \begin{aligned}
+                        \left.\omega^{\left(\alpha\right)}\right|_p\left(v\right)=0,\forall v\in W_p.
+                        \end{aligned}
+                    \end{equation*}
+                </p>
+
+                <li><h2>Frobenius 定理在物理学中的应用</h2></li>
+                <p>
+                    在物理学中, 人们常常遇到一阶微分方程(组)的可积性问题. 稍作数学处理即可将问题转化为, 给定一组 $1$ 形式,
+                    \begin{equation*}
+                        \begin{aligned}
+                        \omega^{\left(\alpha\right)}=\omega^{\left(\alpha\right)}_\mu\mathrm{d}x^\mu,
+                        \end{aligned}
+                    \end{equation*}
+                    需要判断它们是否为恰当形式, 即是否存在一组函数 $\varphi^{\left(\alpha\right)}$, 使得
+                    \begin{equation*}
+                        \begin{aligned}
+                        \omega^{\left(\alpha\right)}=\mathrm{d}\varphi^{\left(\alpha\right)}.
+                        \end{aligned}
+                    \end{equation*}
+                    如果确能找到这样一组函数, 则方程组
+                    \begin{equation*}
+                        \begin{aligned}
+                        \omega^{\left(\alpha\right)}=0
+                        \end{aligned}
+                    \end{equation*}
+                    的解即为
+                    \begin{equation*}
+                        \begin{aligned}
+                        \varphi^{\left(\alpha\right)}=\mathrm{Const}^{\left(\alpha\right)}.
+                        \end{aligned}
+                    \end{equation*}
+                    更高阶的微分方程组的可积性原则上也可由 Frobenius 定理判断, 但实际遇到较少, 不再详述.
+                </p>
+                </ol>
+            </div>
+            
+        </div>
+
+        <div id="canvas" class="gradient"></div>
+    </div>
+
+        <!--<script>
+            // 获取当前时间
+            function getCurrentTime() {
+              const now = new Date();
+              const options = { year: 'numeric', month: 'long', day: 'numeric' };
+              return now.toLocaleDateString('zh-CN', options);
+            }
+        
+            // 更新时间
+            function updateArticleTime() {
+              const timeElement = document.getElementById('article-time');
+              if (timeElement) {
+                timeElement.textContent = getCurrentTime();
+              }
+            }
+        
+            // 初始加载时更新时间
+            updateArticleTime();
+        
+            // 每隔一分钟更新一次时间
+            setInterval(updateArticleTime, 60000);
+          </script>-->
+
+        <script src="../Mathjax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              extensions: ["tex2jax.js"],
+              jax: ["input/TeX", "output/HTML-CSS"],
+              messageStyle: 'none',
+              tex2jax: {
+                  inlineMath:  [ ["$", "$"] ],
+                  displayMath: [ ["$$","$$"] ],
+                  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                  ignoreClass:"class1"
+              },
+              TeX: {
+                extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js'],
+                equationNumbers: { autoNumber: "AMS" },
+                Macros: {
+                    /*RR: "{\\bf R}",新定义不带参数的命令
+                    bold: ["{\\bf #1}", 1]新定义带一个参数的命令*/
+                    bm: ["{\\boldsymbol{#1}}", 1],
+                    dv: ["{\\frac{{\\mathrm{d}}^{#1}{#2}}{{\\mathrm{d}}{#3}^{#1}}}",3],
+                    pdv: ["{\\frac{{\\partial}^{#1}{#2}}{{\\partial}{#3}^{#1}}}",3],
+                  }
+              },
+              "HTML-CSS": {
+                  showMathMenu: false
+              },
+              showProcessingMessages: false,
+              messageStyle: "none"
+          });
+      </script>
+
+      <!--引入可与鼠标交互的动态背景-->
+      <!-- Main library -->
+<script src="../js/three.min.js"></script>
+  
+<!-- Helpers -->
+<script src="../js/projector.js"></script>
+<script src="../js/canvas-renderer.js"></script>
+  
+<!-- Visualitzation adjustments -->
+<script src="../js/3d-lines-animation.js"></script>
+  
+<!-- Animated background color -->
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/color.js"></script>
+
+        <script type="text/javascript" src="../js/script.js"><script/>
+    </body>
+</html>
